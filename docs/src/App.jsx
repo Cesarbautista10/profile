@@ -4,6 +4,8 @@ import Navbar from './components/Navbar'
 import Profile from './pages/Profile'
 import Blog from './pages/Blog'
 import BlogPost from './pages/BlogPost'
+import Microcontrollers from './pages/Microcontrollers'
+import Interfaces from './pages/Interfaces'
 
 function App() {
   const [darkMode, setDarkMode] = useState(false)
@@ -23,6 +25,8 @@ function App() {
         
         <Routes>
           <Route path="/" element={<Profile />} />
+          <Route path="/microcontrollers" element={<Microcontrollers />} />
+          <Route path="/interfaces" element={<Interfaces />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
         </Routes>

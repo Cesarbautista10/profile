@@ -111,7 +111,7 @@ const Header = () => {
               <div className="relative z-10">
                 <div className="w-80 h-80 md:w-96 md:h-96 rounded-full overflow-hidden border-8 border-white dark:border-gray-800 shadow-2xl">
                   <img
-                    src="/profile/img/1745084366008.jpeg"
+                    src="/profile/img/1200x1200.jpg"
                     alt="Cesar Bautista"
                     className="w-full h-full object-cover"
                   />

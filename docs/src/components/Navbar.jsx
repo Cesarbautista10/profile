@@ -33,6 +33,26 @@ const Navbar = ({ darkMode, setDarkMode }) => {
               {t('profile')}
             </Link>
             <Link
+              to="/microcontrollers"
+              className={`px-3 py-2 text-lg font-medium transition-colors ${
+                isActive('/microcontrollers') 
+                  ? 'text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20 rounded-md' 
+                  : 'text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400'
+              }`}
+            >
+              {t('microcontrollers')}
+            </Link>
+            <Link
+              to="/interfaces"
+              className={`px-3 py-2 text-lg font-medium transition-colors ${
+                isActive('/interfaces') 
+                  ? 'text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20 rounded-md' 
+                  : 'text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400'
+              }`}
+            >
+              {t('interfaces')}
+            </Link>
+            <Link
               to="/blog"
               className={`px-3 py-2 text-lg font-medium transition-colors ${
                 isActive('/blog') || location.pathname.startsWith('/blog/') 
@@ -136,6 +156,28 @@ const Navbar = ({ darkMode, setDarkMode }) => {
               onClick={() => setIsOpen(false)}
             >
               {t('profile')}
+            </Link>
+            <Link
+              to="/microcontrollers"
+              className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${
+                isActive('/microcontrollers') 
+                  ? 'text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20' 
+                  : 'text-gray-900 dark:text-white hover:bg-blue-50 dark:hover:bg-gray-700 hover:text-blue-600 dark:hover:text-blue-400'
+              }`}
+              onClick={() => setIsOpen(false)}
+            >
+              {t('microcontrollers')}
+            </Link>
+            <Link
+              to="/interfaces"
+              className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${
+                isActive('/interfaces') 
+                  ? 'text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20' 
+                  : 'text-gray-900 dark:text-white hover:bg-blue-50 dark:hover:bg-gray-700 hover:text-blue-600 dark:hover:text-blue-400'
+              }`}
+              onClick={() => setIsOpen(false)}
+            >
+              {t('interfaces')}
             </Link>
             <Link
               to="/blog"

@@ -2,6 +2,8 @@ export const translations = {
   es: {
     // Navbar
     profile: 'Perfil',
+    microcontrollers: 'Microcontroladores',
+    interfaces: 'Interfaces',
     blog: 'Blog',
     
     // Header
@@ -68,6 +70,8 @@ export const translations = {
   en: {
     // Navbar
     profile: 'Profile',
+    microcontrollers: 'Microcontrollers',
+    interfaces: 'Interfaces',
     blog: 'Blog',
     
     // Header
