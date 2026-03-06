@@ -1,7 +1,7 @@
 import { useLanguage } from '../context/LanguageContext'
 
 const Microcontrollers = () => {
-  const { t } = useLanguage()
+  const { t, language } = useLanguage()
 
   const microcontrollers = [
     {
@@ -106,7 +106,7 @@ const Microcontrollers = () => {
           </svg>
         </div>
         <h2 className="text-4xl font-bold text-gray-900 dark:text-white">
-          {t('language') === 'es' ? 'Microcontroladores' : 'Microcontrollers'}
+          {language === 'es' ? 'Microcontroladores' : 'Microcontrollers'}
         </h2>
       </div>
 
@@ -116,7 +116,7 @@ const Microcontrollers = () => {
           <thead>
             <tr className="bg-gradient-to-r from-slate-700 to-slate-800 dark:from-slate-800 dark:to-slate-900">
               <th className="px-6 py-4 text-left text-sm font-bold text-white uppercase tracking-wider border-b-2 border-blue-500">
-                {t('language') === 'es' ? 'Familia' : 'Family'}
+                {language === 'es' ? 'Familia' : 'Family'}
               </th>
               <th className="px-6 py-4 text-left text-sm font-bold text-white uppercase tracking-wider border-b-2 border-blue-500">
                 Series
@@ -125,7 +125,7 @@ const Microcontrollers = () => {
                 Core
               </th>
               <th className="px-6 py-4 text-left text-sm font-bold text-white uppercase tracking-wider border-b-2 border-blue-500">
-                {t('language') === 'es' ? 'Frecuencia' : 'Frequency'}
+                {language === 'es' ? 'Frecuencia' : 'Frequency'}
               </th>
               <th className="px-6 py-4 text-left text-sm font-bold text-white uppercase tracking-wider border-b-2 border-blue-500">
                 Flash
@@ -202,25 +202,25 @@ const Microcontrollers = () => {
         <div className="bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/20 dark:to-blue-800/20 rounded-lg p-4 border border-blue-200 dark:border-blue-700">
           <div className="text-3xl font-bold text-blue-600 dark:text-blue-400">10</div>
           <div className="text-sm text-gray-600 dark:text-gray-400 mt-1">
-            {t('language') === 'es' ? 'Familias' : 'Families'}
+            {language === 'es' ? 'Familias' : 'Families'}
           </div>
         </div>
         <div className="bg-gradient-to-br from-purple-50 to-purple-100 dark:from-purple-900/20 dark:to-purple-800/20 rounded-lg p-4 border border-purple-200 dark:border-purple-700">
           <div className="text-3xl font-bold text-purple-600 dark:text-purple-400">6</div>
           <div className="text-sm text-gray-600 dark:text-gray-400 mt-1">
-            {t('language') === 'es' ? 'Arquitecturas' : 'Architectures'}
+            {language === 'es' ? 'Arquitecturas' : 'Architectures'}
           </div>
         </div>
         <div className="bg-gradient-to-br from-green-50 to-green-100 dark:from-green-900/20 dark:to-green-800/20 rounded-lg p-4 border border-green-200 dark:border-green-700">
           <div className="text-3xl font-bold text-green-600 dark:text-green-400">25+</div>
           <div className="text-sm text-gray-600 dark:text-gray-400 mt-1">
-            {t('language') === 'es' ? 'Modelos' : 'Models'}
+            {language === 'es' ? 'Modelos' : 'Models'}
           </div>
         </div>
         <div className="bg-gradient-to-br from-orange-50 to-orange-100 dark:from-orange-900/20 dark:to-orange-800/20 rounded-lg p-4 border border-orange-200 dark:border-orange-700">
           <div className="text-3xl font-bold text-orange-600 dark:text-orange-400">100%</div>
           <div className="text-sm text-gray-600 dark:text-gray-400 mt-1">
-            {t('language') === 'es' ? 'Experiencia' : 'Experience'}
+            {language === 'es' ? 'Experiencia' : 'Experience'}
           </div>
         </div>
       </div>
