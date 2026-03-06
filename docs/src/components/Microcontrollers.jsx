@@ -119,7 +119,7 @@ const Microcontrollers = () => {
                 {t('language') === 'es' ? 'Familia' : 'Family'}
               </th>
               <th className="px-6 py-4 text-left text-sm font-bold text-white uppercase tracking-wider border-b-2 border-blue-500">
-                {t('language') === 'es' ? 'Series' : 'Series'}
+                Series
               </th>
               <th className="px-6 py-4 text-left text-sm font-bold text-white uppercase tracking-wider border-b-2 border-blue-500">
                 Core
