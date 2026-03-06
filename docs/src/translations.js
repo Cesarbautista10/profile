@@ -5,8 +5,10 @@ export const translations = {
     blog: 'Blog',
     
     // Header
-    title: 'Embedded Systems Engineer',
-    description: 'Especializado en desarrollo de firmware, integración de hardware y arquitecturas IoT',
+    title: 'Ingeniero en Sistemas Embebidos',
+    description: 'Especializado en desarrollo de firmware, integración de hardware y arquitecturas IoT para la industria mexicana',
+    location: '📍 México',
+    currency: 'MXN',
     
     // Experience
     experienceTitle: 'Experiencia',
@@ -70,7 +72,9 @@ export const translations = {
     
     // Header
     title: 'Embedded Systems Engineer',
-    description: 'Specialized in firmware development, hardware integration and IoT architectures',
+    description: 'Specialized in firmware development, hardware integration and IoT architectures for industrial applications',
+    location: '📍 USA',
+    currency: 'USD',
     
     // Experience
     experienceTitle: 'Experience',

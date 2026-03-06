@@ -47,23 +47,25 @@ const Navbar = ({ darkMode, setDarkMode }) => {
             <div className="flex items-center gap-2 ml-4">
               <button
                 onClick={() => changeLanguage('es')}
-                className={`px-3 py-1 rounded-md text-sm font-medium transition-colors ${
+                className={`flex items-center gap-2 px-3 py-2 rounded-md text-sm font-medium transition-all ${
                   language === 'es'
-                    ? 'bg-blue-600 text-white'
-                    : 'text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700'
+                    ? 'bg-blue-600 text-white shadow-md'
+                    : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
                 }`}
               >
-                🇪🇸 ES
+                <span className="text-lg leading-none">🇲🇽</span>
+                <span>ES</span>
               </button>
               <button
                 onClick={() => changeLanguage('en')}
-                className={`px-3 py-1 rounded-md text-sm font-medium transition-colors ${
+                className={`flex items-center gap-2 px-3 py-2 rounded-md text-sm font-medium transition-all ${
                   language === 'en'
-                    ? 'bg-blue-600 text-white'
-                    : 'text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700'
+                    ? 'bg-blue-600 text-white shadow-md'
+                    : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
                 }`}
               >
-                🇬🇧 EN
+                <span className="text-lg leading-none">🇺🇸</span>
+                <span>EN</span>
               </button>
             </div>
             
@@ -82,9 +84,9 @@ const Navbar = ({ darkMode, setDarkMode }) => {
             {/* Language Selector Mobile */}
             <button
               onClick={() => changeLanguage(language === 'es' ? 'en' : 'es')}
-              className="px-2 py-1 text-sm rounded-md bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-white"
+              className="px-3 py-2 text-lg rounded-md bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-white"
             >
-              {language === 'es' ? '🇬🇧' : '🇪🇸'}
+              {language === 'es' ? '🇺🇸' : '🇲🇽'}
             </button>
             
             {/* Dark Mode Toggle Mobile */}
@@ -153,7 +155,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
                 onClick={() => changeLanguage(language === 'es' ? 'en' : 'es')}
                 className="w-full px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors font-medium"
               >
-                {language === 'es' ? '🇬🇧 English' : '🇪🇸 Español'}
+                {language === 'es' ? '�🇸 English' : '🇲🇽 Español'}
               </button>
             </div>
           </div>
